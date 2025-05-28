@@ -5,7 +5,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 export default function About() {
     return (
         <section
-            id="about"
             className="relative flex-1 flex flex-col md:flex-row bg-gradient-to-b from-black to-zinc-950 md:p-10 border-red-500 border-2 bg-cover bg-center"
         >
 

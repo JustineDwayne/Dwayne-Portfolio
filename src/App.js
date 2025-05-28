@@ -8,7 +8,9 @@ function App() {
     <div className="flex flex-col min-h-screen scroll-smooth" section id="home">
       <Header />
       <Main />
+      <section id="about" className="scroll-mt-[5rem]">
       <About />
+        </section>
       <Icons />
     </div>
   );
