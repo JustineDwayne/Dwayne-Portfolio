@@ -1,15 +1,90 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../Assets/circle.png';
+import burg from '../Assets/burger.svg';
+import x from '../Assets/x.svg';
 
 function Header() {
-  return (
-    <header className="bg-zinc-900 sticky top-0 z-20 px-6 py-3 flex items-center shadow-md">
-      <img src={logo} alt="logo" className="w-12 h-12 mr-4" />
-      <h1 className="text-white text-xl font-semibold tracking-wide select-none">
-        Dwayne
-      </h1>
-    </header>
-  );
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <header className="bg-zinc-950 sticky top-0 z-20 px-6 py-3 flex items-center justify-between shadow-md">
+            <div className="flex items-center">
+                <img src={logo} alt="logo" className="w-12 h-12 mr-4" />
+                <h1 className="text-white text-lg font-semibold tracking-wide select-none">
+                    Dwayne
+                </h1>
+            </div>
+
+            {/* Desktop nav */}
+            <nav className="hidden md:block">
+                <ul className="flex space-x-8 text-white font-medium text-lg">
+                    <li>
+                        <a href="#about" className="hover:text-gray-300 transition-colors duration-200">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" className="hover:text-gray-300 transition-colors duration-200">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="hover:text-gray-300 transition-colors duration-200">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            {/* Hamburger button */}
+            <button
+                className="md:hidden text-white focus:outline-none"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle menu"
+            >
+                <img
+                    src={isOpen ? x : burg}
+                    alt={isOpen ? "Close menu" : "Open menu"}
+                    className="w-8 h-8 text-white"
+                />
+            </button>
+
+            {/* Mobile menu */}
+            {isOpen && (
+                <nav className="absolute top-full left-0 w-full bg-zinc-900 shadow-md md:hidden">
+                    <ul className="flex flex-col items-center space-y-4 py-4 text-white font-medium text-lg">
+                        <li>
+                            <a
+                                href="#about"
+                                className="hover:text-gray-300 transition-colors duration-200"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#projects"
+                                className="hover:text-gray-300 transition-colors duration-200"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#contact"
+                                className="hover:text-gray-300 transition-colors duration-200"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            )}
+        </header>
+    );
 }
 
 export default Header;
