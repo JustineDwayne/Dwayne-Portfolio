@@ -4,7 +4,7 @@ import ch from '../Assets/character.png';
 export default function Main() {
     return (
         <section
-            className="relative w-full overflow-x-hidden flex items-center justify-center bg-no-repeat bg-cover bg-center"
+            className="relative w-full flex items-center justify-center bg-no-repeat bg-cover bg-center"
             style={{ backgroundImage: `url(${bg})` }}
         >
             <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center pb-20 w-full max-w-[100vw]">

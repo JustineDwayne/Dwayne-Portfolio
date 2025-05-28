@@ -9,9 +9,11 @@ function App() {
       <Header />
       <Main />
       <section id="about" className="scroll-mt-[5rem]">
-      <About />
-        </section>
+        <About />
+      </section>
+      <section id="stacks" className="scroll-mt-[5rem]">
       <Icons />
+      </section>
     </div>
   );
 }

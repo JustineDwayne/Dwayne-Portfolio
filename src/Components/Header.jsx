@@ -23,6 +23,11 @@ function Header() {
                         </a>
                     </li>
                     <li>
+                        <a href="#stacks" className="hover:text-gray-300 transition-colors duration-200">
+                            Stacks
+                        </a>
+                    </li>
+                    <li>
                         <a href="#projects" className="hover:text-gray-300 transition-colors duration-200">
                             Projects
                         </a>
@@ -59,6 +64,14 @@ function Header() {
                                 onClick={() => setIsOpen(false)}
                             >
                                 About
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#stacks"
+                                className="hover:text-gray-300 transition-colors duration-200"
+                                onClick={() => setIsOpen(false)}>
+                                Stacks
                             </a>
                         </li>
                         <li>
