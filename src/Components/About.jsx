@@ -44,7 +44,7 @@ export default function About() {
                 <img
                     src={ch}
                     alt="Character"
-                    className="relative md:top-[2.5rem] top-0 md:w-72 lg:w-96 object-cover"
+                    className="relative md:top-[2.5rem] top-0 md:w-72 lg:w-96 w-full max-w-full object-cover"
                 />
             </div>
         </section>

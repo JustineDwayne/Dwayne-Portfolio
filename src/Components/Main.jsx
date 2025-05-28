@@ -8,7 +8,7 @@ export default function Main() {
             style={{ backgroundImage: `url(${bg})` }}
         >
             <div className="flex flex-col items-center justify-center h-full px-4 text-center pb-20">
-                <div className="flex flex-col w-fit">
+                <div className="flex flex-col">
                     <h2 className="text-white font-semibold self-end leading-none m-0
                      text-[3rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem]
                      opacity-0 fade-in-up delay-0">
