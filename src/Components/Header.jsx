@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../Assets/circle.png';
-import burg from '../Assets/burger.svg';
-import x from '../Assets/x.svg';
+import { FaGripLines, FaTimes } from "react-icons/fa";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -46,11 +45,11 @@ function Header() {
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
             >
-                <img
-                    src={isOpen ? x : burg}
-                    alt={isOpen ? "Close menu" : "Open menu"}
-                    className="w-8 h-8 text-white"
-                />
+                {isOpen ? (
+                    <FaTimes className="w-8 h-8 text-white" />
+                ) : (
+                    <FaGripLines className="w-8 h-8 text-white" />
+                )}
             </button>
 
             {/* Mobile menu */}
