@@ -32,4 +32,10 @@
   animation-delay: 1.2s;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 

@@ -5,7 +5,7 @@ import About from "./Components/About";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen scroll-smooth">
+    <div className="flex flex-col min-h-screen scroll-smooth" section id="home">
       <Header />
       <Main />
       <About />
