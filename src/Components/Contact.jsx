@@ -4,19 +4,19 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaFile } from 'react-icons/f
 export default function Footer() {
     return (
         <footer className="bg-zinc-950 text-gray-300 px-6 py-10 overflow-x-hidden">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 w-full">
 
                 {/* Left: Contact Info */}
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                     <h3 className="text-white text-2xl font-bold mb-4">Let's Connect</h3>
-                    <p className="mb-4 text-gray-400">
+                    <p className="mb-4 text-gray-400 break-words">
                         I’m open to collaborations, freelance projects, or just a friendly chat about tech.
                     </p>
-                    <div className="flex items-center gap-3 text-gray-300 break-words">
-                        <FaEnvelope className="text-lg" />
+                    <div className="flex items-start gap-3 text-gray-300 flex-wrap break-all">
+                        <FaEnvelope className="text-lg mt-1" />
                         <a
                             href="mailto:calma.justinedwayne.11232003@gmail.com"
-                            className="break-words"
+                            className="break-all"
                         >
                             calma.justinedwayne.11232003@gmail.com
                         </a>
