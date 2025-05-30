@@ -8,6 +8,7 @@ import {
   FaGitAlt,
   FaNodeJs,
   FaPhp,
+  FaFigma,
 } from 'react-icons/fa';
 
 import { RiTailwindCssFill, RiSupabaseFill } from "react-icons/ri";
@@ -25,14 +26,15 @@ const icons = [
   { icon: <RiSupabaseFill />, name: 'Supabase' },
   { icon: <FaPhp />, name: 'PHP' },
   { icon: <VscVscode />, name: 'VSCode' },
+  { icon: <FaFigma />, name: 'Figma' },
 ];
 
 export default function Icons() {
   return (
-    <section className="relative flex-1 flex flex-col md:flex-col bg-gradient-to-b from-black to-zinc-950 py-8 px-10 md:pt-8 bg-cover bg-center">
+    <section className="relative flex-1 flex flex-col md:flex-col bg-gradient-to-b from-black to-zinc-950 py-10 px-10 md:pt-8 bg-cover bg-center">
       <h2 className="text-white text-[5rem] font-bold mb-8 text-center">tech stacks</h2>
       <h2 className="text-white text-3xl font-bold mb-8 text-center">Here are some of the programming languages and technologies I've worked with including but not limited to:</h2>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6 pb-10">
         {icons.map(({ icon, name }, index) => (
           <div
             key={index}

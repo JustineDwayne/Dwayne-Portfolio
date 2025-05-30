@@ -7,9 +7,9 @@ function Header() {
 
     return (
         <header className="bg-zinc-950 sticky top-0 z-20 px-6 py-3 flex items-center justify-between shadow-md">
-            <div className="flex items-center">
-                <a href='#home'>
-                    <img src={logo} alt="logo" className="w-12 h-12 mr-4" />
+            <div className="flex items-center flex-row">
+                <a href='#home' className='flex flex-row'>
+                    <img src={logo} alt="logo" className="w-12 h-12 mr-4" /> <p className='text-white font-bold text-2xl pt-2'>jdc</p>
                 </a>
             </div>
 
