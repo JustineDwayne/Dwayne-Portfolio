@@ -15,6 +15,7 @@ import { RiTailwindCssFill, RiSupabaseFill } from "react-icons/ri";
 
 import sl from '../Assets/senseleads.jpg'
 import dr from '../Assets/dripstr.jpg'
+import tg from '../Assets/travelgo.jpg'
 import ProjectCard from './ProjectCard';
 
 const projects = [
@@ -22,7 +23,7 @@ const projects = [
         id: 1,
         img: sl,
         name: 'Sense Leads Website',
-        desc: 'A company website for Sense Leads Electronics',
+        desc: "A company website that I've worked on as an intern for Sense Leads Electronics and Contsturction Corp.",
         used: [
             {
                 name: 'React',
@@ -86,8 +87,9 @@ const projects = [
 
     {
         id: 3,
+        img: tg,
         name: 'TravelGo',
-        desc: 'A fligh and hotel booking website with API integration',
+        desc: 'A flight and hotel booking website with API integration.',
         used: [
             {
                 name: 'HTML',
@@ -128,13 +130,13 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="relative flex-1 flex flex-col md:flex-row bg-gradient-to-b bg-black from-black to-zinc-950 md:p-10 bg-cover bg-center">
-            <div className="flex flex-col justify-center max-w-4xl pt-4 px-10 md:max-w-none md:flex-1">
+        <section className="relative flex-1 flex flex-col md:flex-row bg-gradient-to-b bg-black from-black to-zinc-800 md:p-10 bg-cover bg-center">
+            <div className="flex flex-col justify-center max-w-4xl pt-2 pb-2 px-0 md:max-w-none md:flex-1">
                 <h2 className="text-white font-semibold text-[3rem] md:text-[5rem] mb-6">
-                    projects --
+                    projects –
                 </h2>
-                <h2 className='text-white text-lg font-bold mb-8'>here are some of the projects i've worked on</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <h2 className='text-white text-xl font-bold mb-8'>here are some of the personal and group projects that i've worked on</h2>
+                <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center gap-8">
                     {projects.map(project => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
