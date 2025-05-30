@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaFile } from 'react-icons/fa';
 
 export default function Footer() {
     return (
@@ -14,15 +14,13 @@ export default function Footer() {
                     </p>
                     <div className="flex items-center gap-3 text-gray-300">
                         <FaEnvelope className="text-lg" />
-                        <a href="mailto:your.email@example.com" className="hover:text-blue-400 transition">
-                            your.email@example.com
+                        <a href="mailto:calma.justinedwayne.11232003@gmail.comsition">
+                            calma.justinedwayne.11232003@gmail.com
                         </a>
                     </div>
                     <div className="flex items-center gap-3 text-gray-300 pt-2">
                         <FaPhone className="text-lg" />
-                        <a href="mailto:your.email@example.com" className="hover:text-blue-400 transition">
-                            your.email@example.com
-                        </a>
+                           +63 917 645 7016
                     </div>
                 </div>
 
@@ -40,8 +38,13 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h4 className="text-white text-xl font-semibold mb-4">Hire me</h4>
-
+                        <h4 className="text-white text-xl font-semibold mb-4">Hire Me</h4>
+                        <a href="/JDCalma - Resume 2025.pdf" download>
+                            <button className="flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 text-white py-4 px-4 w-[12rem] rounded-md transition">
+                                <FaFile className="mr-2 text-lg" />
+                                <span>Download Resume</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

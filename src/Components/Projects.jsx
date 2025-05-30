@@ -23,7 +23,7 @@ const projects = [
         id: 1,
         img: sl,
         name: 'Sense Leads Website',
-        desc: "A company website that I've worked on as an intern for Sense Leads Electronics and Contsturction Corp.",
+        desc: "A company website that I've worked on as an intern for Sense Leads Electronics and Construction Corp.",
         used: [
             {
                 name: 'React',
