@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaFile } from 'react-icons/f
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-950 text-gray-300 px-6 py-10">
+        <footer className="bg-zinc-950 text-gray-300 px-6 py-10 overflow-x-hidden">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
 
                 {/* Left: Contact Info */}
@@ -12,35 +12,48 @@ export default function Footer() {
                     <p className="mb-4 text-gray-400">
                         I’m open to collaborations, freelance projects, or just a friendly chat about tech.
                     </p>
-                    <div className="flex items-center gap-3 text-gray-300">
+                    <div className="flex items-center gap-3 text-gray-300 break-words">
                         <FaEnvelope className="text-lg" />
-                        <a href="mailto:calma.justinedwayne.11232003@gmail.comsition">
+                        <a
+                            href="mailto:calma.justinedwayne.11232003@gmail.com"
+                            className="break-words"
+                        >
                             calma.justinedwayne.11232003@gmail.com
                         </a>
                     </div>
                     <div className="flex items-center gap-3 text-gray-300 pt-2">
                         <FaPhone className="text-lg" />
-                           +63 917 645 7016
+                        <span>+63 917 645 7016</span>
                     </div>
                 </div>
 
-                {/* Right: Social Icons */}
-                <div className='flex flex-col '>
-                    <div className="flex flex-col items-center mb-4">
+                {/* Right: Social Icons & Resume */}
+                <div className="flex flex-col items-center w-full md:w-auto">
+                    <div className="flex flex-col items-center mb-6">
                         <h4 className="text-white text-xl font-semibold mb-4">Follow me</h4>
                         <div className="flex gap-6 text-2xl items-center justify-center">
-                            <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+                            <a
+                                href="https://github.com/yourgithub"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-blue-400"
+                            >
                                 <FaGithub />
                             </a>
-                            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+                            <a
+                                href="https://linkedin.com/in/yourlinkedin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-blue-400"
+                            >
                                 <FaLinkedin />
                             </a>
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
                         <h4 className="text-white text-xl font-semibold mb-4">Hire Me</h4>
-                        <a href="/JDCalma - Resume 2025.pdf" download>
-                            <button className="flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 text-white py-4 px-4 w-[12rem] rounded-md transition">
+                        <a href="/JDCalma - Resume 2025.pdf" download className="w-full">
+                            <button className="flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 text-white py-3 px-4 w-full md:w-[12rem] rounded-md transition">
                                 <FaFile className="mr-2 text-lg" />
                                 <span>Download Resume</span>
                             </button>
