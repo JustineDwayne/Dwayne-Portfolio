@@ -130,12 +130,14 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="relative flex-1 flex flex-col md:flex-row bg-gradient-to-b bg-black from-black to-zinc-800 md:p-10 bg-cover bg-center">
+        <section className="relative flex-1 flex flex-col md:flex-row bg-gradient-to-b bg-black from-black to-zinc-800 px-4 md:px-10 py-10 bg-cover bg-center">
             <div className="flex flex-col justify-center max-w-4xl pt-2 pb-2 px-0 md:max-w-none md:flex-1">
                 <h2 className="text-white font-semibold text-[3rem] md:text-[5rem] mb-6">
                     projects –
                 </h2>
-                <h2 className='text-white text-xl font-bold mb-8'>here are some of the personal and group projects that i've worked on</h2>
+                <h2 className='text-white text-xl font-bold mb-8'>
+                    here are some of the personal and group projects that i've worked on
+                </h2>
                 <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center gap-8">
                     {projects.map(project => (
                         <ProjectCard key={project.id} project={project} />
@@ -143,5 +145,6 @@ export default function Projects() {
                 </div>
             </div>
         </section>
-    )
+    );
+
 }
