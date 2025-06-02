@@ -33,7 +33,7 @@ export default function Footer() {
                         <h4 className="text-white text-xl font-semibold mb-4">Follow me</h4>
                         <div className="flex gap-6 text-2xl items-center justify-center">
                             <a
-                                href="https://github.com/yourgithub"
+                                href="https://github.com/JustineDwayne"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-blue-400"
@@ -41,7 +41,7 @@ export default function Footer() {
                                 <FaGithub />
                             </a>
                             <a
-                                href="https://linkedin.com/in/yourlinkedin"
+                                href="https://www.linkedin.com/notifications/?filter=all"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-blue-400"
