@@ -16,6 +16,7 @@ import { RiTailwindCssFill, RiSupabaseFill } from "react-icons/ri";
 import sl from '../Assets/senseleads.jpg'
 import dr from '../Assets/dripstr.jpg'
 import tg from '../Assets/travelgo.jpg'
+import wr from '../Assets/wraiter.jpg'
 import ProjectCard from './ProjectCard';
 
 const projects = [
@@ -30,7 +31,7 @@ const projects = [
                 icon: <FaReact />,
             },
             {
-                name: 'TailwindCSS',
+                name: 'Tailwind CSS',
                 icon: <RiTailwindCssFill />
             },
             {
@@ -61,7 +62,7 @@ const projects = [
                 icon: <FaReact />,
             },
             {
-                name: 'TailwindCSS',
+                name: 'Tailwind CSS',
                 icon: <RiTailwindCssFill />
             },
             {
@@ -111,10 +112,6 @@ const projects = [
                 name: 'Bootstrap',
                 icon: <FaBootstrap />
             },
-            {
-                name: 'Figma',
-                icon: <FaFigma />
-            }
         ],
         link: [
             {
@@ -123,8 +120,42 @@ const projects = [
 
             }
         ]
-    }
+    },
 
+    {
+        id: 4,
+        img: wr,
+        name: 'wrAIter',
+        desc: 'Content generator through Reddit posts links using DeepSeek API.',
+        used: [
+            {
+                name: 'React',
+                icon: <FaReact />,
+            },
+
+            {
+                name: 'Tailwind CSS',
+                icon: <RiTailwindCssFill />
+            },
+
+            {
+                name: 'Node.js',
+                icon: <FaNodeJs />
+            },
+
+            {
+                name: 'Figma',
+                icon: <FaFigma />
+            }
+        ],
+        link: [
+
+            {
+                icon: <FaGithub />,
+                link: 'https://github.com/JustineDwayne/wraiter'
+            }
+        ]
+    }
 ]
 
 
@@ -138,11 +169,12 @@ export default function Projects() {
                 <h2 className='text-white text-xl font-bold mb-8'>
                     here are some of the personal and group projects that i've worked on
                 </h2>
-                <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
                     {projects.map(project => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
+
             </div>
         </section>
     );
