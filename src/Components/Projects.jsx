@@ -153,6 +153,10 @@ const projects = [
             {
                 icon: <FaGithub />,
                 link: 'https://github.com/JustineDwayne/wraiter'
+            },
+            {
+                icon: <FaLink />,
+                link: 'https://wraiter-omega.vercel.app/home'
             }
         ]
     }
