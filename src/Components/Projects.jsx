@@ -8,16 +8,22 @@ import {
     FaFigma,
     FaGithub,
     FaLink,
-    FaBootstrap
+    FaBootstrap,
+    FaLaravel
 } from 'react-icons/fa';
 
 import { RiTailwindCssFill, RiSupabaseFill } from "react-icons/ri";
+
+import { SiVite } from "react-icons/si";
 
 import sl from '../Assets/senseleads.jpg'
 import dr from '../Assets/dripstr.jpg'
 import tg from '../Assets/travelgo.jpg'
 import wr from '../Assets/wraiter.jpg'
+import cr from '../Assets/crud.jpg'
+
 import ProjectCard from './ProjectCard';
+import { FaV } from 'react-icons/fa6';
 
 const projects = [
     {
@@ -158,6 +164,35 @@ const projects = [
                 icon: <FaLink />,
                 link: 'https://wraiter-omega.vercel.app/home'
             }
+        ]
+    },
+        {
+        id: 5,
+        img: cr,
+        name: 'Employee CRUD',
+        desc: 'Employee Management Web Application with CRUD Functionalities using Laravel + Vite',
+        used: [
+            {
+                name: 'Laravel',
+                icon: <FaLaravel />,
+            },
+
+            {
+                name: 'Bootstrap',
+                icon: <FaBootstrap />
+            },
+
+            {
+                name: 'Vite',
+                icon: <SiVite />
+            }
+        ],
+        link: [
+
+            {
+                icon: <FaGithub />,
+                link: 'https://github.com/JustineDwayne/employee_crud'
+            },
         ]
     }
 ]

@@ -9,10 +9,15 @@ import {
   FaNodeJs,
   FaPhp,
   FaFigma,
+  FaLaravel
 } from 'react-icons/fa';
 
 import { RiTailwindCssFill, RiSupabaseFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
+import { TbFileTypeSql } from "react-icons/tb";
+import { SiVite } from "react-icons/si";
+import { DiMysql } from "react-icons/di";
+
 
 const icons = [
   { icon: <FaReact />, name: 'React' },
@@ -27,6 +32,12 @@ const icons = [
   { icon: <FaPhp />, name: 'PHP' },
   { icon: <VscVscode />, name: 'VSCode' },
   { icon: <FaFigma />, name: 'Figma' },
+  { icon: <FaLaravel />, name: 'Laravel' },
+  { icon: <TbFileTypeSql />, name: 'SQL' },
+  { icon: <DiMysql />, name: 'MySQL' },
+  { icon: <SiVite />, name: 'Vite' },
+
+
 ];
 
 export default function Icons() {
